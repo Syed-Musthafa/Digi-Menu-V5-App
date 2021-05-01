@@ -56,6 +56,13 @@ export const settings = require("../assets/icons/settings.png");
 
 export const camera = require("../assets/icons/camera.png");
 
+export const heart_icon = require("../assets/icons/heart_icon.png");
+export const heart_red = require("../assets/icons/heart_red.png");
+
+export const star1 = require("../assets/icons/star.png");
+export const fire = require("../assets/icons/fire.png");
+export const clock = require("../assets/icons/clock.png");
+
 export default {
     
     home,
@@ -97,7 +104,14 @@ export default {
     location1,
     gender,
     settings,
-    camera
+    camera,
+
+    heart_icon,
+    heart_red,
+
+    star1,
+    fire,
+    clock
 
     // cars1,
     // cars2,
@@ -119,7 +133,7 @@ export default {
     // home_icon,
     // search,
 
-    // star,
+    
    
     
     // comment,

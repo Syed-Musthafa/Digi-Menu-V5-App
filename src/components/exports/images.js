@@ -2,7 +2,6 @@
 
 const bgImg = require("../assets/images/frontBG.jpg");
 
-const plate = require("../assets/images/plate.png");
 
 const homepage = require("../assets/images/homepage.jpg");
 
@@ -22,6 +21,13 @@ const profile_3 = require("../assets/images/profile_3.jpg");
 const profile_4 = require("../assets/images/profile_4.jpg");
 const profile_5 = require("../assets/images/profile_5.jpg");
 
+const plate1 = require("../assets/images/plate1.png");
+const plate2 = require("../assets/images/plate2.png");
+const plate3 = require("../assets/images/plate3.png");
+const plate4 = require("../assets/images/plate4.png");
+const plate5 = require("../assets/images/plate5.jpg");
+const plate6 = require("../assets/images/plate6.png");
+
 
 
 
@@ -37,21 +43,25 @@ const takeout = require("../assets/images/takeout.png");
 const tableBooking = require("../assets/images/tableBooking.png");
 
 
-// const rollsRoyce = require("../assets/images/rollsRoyce.jpg");
+const sideplate1 = require("../assets/images/sideplate1.png");
 // const benz = require("../assets/images/benz.jpg");
 
 // const car = require("../assets/images/car-top1.png");
 
-// const service = require("../assets/images/service.png");
-// const service1 = require("../assets/images/service1.png");
-// const service2 = require("../assets/images/service2.png");
 
+const ingra1 = require("../assets/images/ingra1.png");
+const ingra2 = require("../assets/images/ingra2.png");
+const ingra3 = require("../assets/images/ingra3.png");
+const ingra4 = require("../assets/images/ingra4.png");
+const ingra5 = require("../assets/images/ingra5.png");
+const ingra6 = require("../assets/images/ingra6.png");
+const ingra7 = require("../assets/images/ingra7.png");
 
 
 
 export default {
     bgImg,
-    plate,
+ 
 
     homepage,
 
@@ -69,6 +79,22 @@ export default {
     profile_4,
     profile_5,
 
+
+    plate1,
+    plate2,
+    plate3,
+    plate4,
+    plate5,
+    plate6,
+
+    ingra1,
+    ingra2,
+    ingra3,
+    ingra4,
+    ingra5,
+    ingra6,
+    ingra7,
+
     sunrise,
 
     reservation,
@@ -81,6 +107,8 @@ export default {
     qr,
     takeout,
     tableBooking,
+
+    sideplate1,
 
 
 

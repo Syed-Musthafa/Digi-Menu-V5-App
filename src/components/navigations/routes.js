@@ -10,8 +10,18 @@ import {
 
   import {
     Dashboard,
-    ScanQR
+    ScanQR,
+    ScanQRs
   } from "./../pages/mainScreen"
+
+  import {
+    HomeScreen,
+    FoodsScreen,
+    OrderDeliveryScreen,
+    ItemScreen
+    
+  } from "./../pages/TakeOutScreen"
+
 
 
 
@@ -29,8 +39,19 @@ import {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
 
+        {/* mainScreen */}
+
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="ScanQR" component={ScanQR} />
+        <Stack.Screen name="ScanQRs" component={ScanQRs} />
+
+
+        {/* TakeOutScreen */}
+
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="FoodsScreen" component={FoodsScreen} />
+        <Stack.Screen name="OrderDeliveryScreen" component={OrderDeliveryScreen} />
+        <Stack.Screen name="ItemScreen" component={ItemScreen} />
         
       </Stack.Navigator>
       )

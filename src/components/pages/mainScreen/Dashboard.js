@@ -39,7 +39,7 @@ const Dashboard = ({navigation}) => {
         return (
             <View style={{ padding: 10, justifyContent: 'center', alignItems: 'center' }}>
 
-                <TouchableOpacity style={styles.card} onPress={ () => { navigation.navigate('ScanQR')}}>
+                <TouchableOpacity style={styles.card} onPress={ () => { navigation.navigate('ScanQRs')}}>
                     <View style={{ flexDirection: 'row', }}>
                         <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start', padding: 20, }}>
                             <Image source={images.qr} resizeMode="contain" style={{ width: 100, height: 100 }} />
@@ -49,8 +49,8 @@ const Dashboard = ({navigation}) => {
                         </View>
                     </View>
                 </TouchableOpacity>
-
-                <TouchableOpacity style={[styles.card, { marginTop: 40 }]}>
+                
+                <TouchableOpacity style={[styles.card, { marginTop: 40 }]} onPress={ () => { navigation.navigate('HomeScreen')}}>
                 <View style={{ flexDirection: 'row', }}>
                         <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start', padding: 20, }}>
                             <Image source={images.takeout} resizeMode="contain" style={{ width: 100, height: 100 }} />

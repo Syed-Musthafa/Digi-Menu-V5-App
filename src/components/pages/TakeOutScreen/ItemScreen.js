@@ -32,7 +32,9 @@ const ItemScreen = ({ navigation, route }) => {
 
 
                             width: 45
-                        }} >
+                        }}
+                        onPress={() => {navigation.goBack()}}
+                         >
                         <Image source={icons.arrow_Left} resizeMode='contain' style={{ width: 20, height: 20, borderRadius: 20, tintColor: COLORS.black }} />
                     </TouchableOpacity>
 

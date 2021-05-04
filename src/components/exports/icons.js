@@ -44,6 +44,8 @@ export const tracking = require("../assets/icons/tracking.png");
 
 export const language = require("../assets/icons/language.png");
 
+export const schedule = require("../assets/icons/schedule.png");
+
 
 
 export const location1 = require("../assets/icons/location-pin.png");
@@ -110,6 +112,7 @@ export default {
     heart_red,
 
     star1,
+    schedule,
     fire,
     clock
 

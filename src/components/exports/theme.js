@@ -11,8 +11,8 @@ export const ICON_SIZE = 56;
 export const COLORS = {
     // base colors
     // primary: "#172E55", // dark blue
-    primary: "#ab47bc",
-    secondary: "#00c853",   // gray
+    primary: "#349665",
+    secondary: "#FBC401",   
 
     tranparent: 'rgba(0,0,0,0)',
 

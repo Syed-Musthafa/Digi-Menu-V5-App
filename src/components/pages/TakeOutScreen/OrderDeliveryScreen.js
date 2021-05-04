@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, StatusBar, ScrollView, FlatList } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, TextInput, StatusBar, ScrollView, FlatList, ImageBackground } from 'react-native'
 
 import ToggleSwitch from 'toggle-switch-react-native'
 import { useIsFocused } from '@react-navigation/native';
@@ -22,7 +22,7 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
 
         setRestaurant(item)
 
-    },[restaurant]);
+    }, [restaurant]);
 
 
     function editOrder(action, menuId, price) {
@@ -95,9 +95,9 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
                             marginLeft: 20,
                             marginTop: 25,
                             width: 45
-                        }} 
-                        onPress={() => { navigation.goBack()}}
-                        >
+                        }}
+                        onPress={() => { navigation.goBack() }}
+                    >
                         <Image source={icons.arrow_Left} resizeMode='contain' style={{ width: 20, height: 20, borderRadius: 20, tintColor: COLORS.white }} />
                     </TouchableOpacity>
                     <TouchableOpacity
@@ -137,9 +137,9 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
 
 
 
-                    <View style={{ width: '70%', justifyContent:'center' , alignItems:'center'}}>
+                    <View style={{ width: '70%', justifyContent: 'center', alignItems: 'center' }}>
                         <Text style={{ fontSize: 20, fontWeight: 'bold' }} >{restaurant.name}</Text>
-                      
+
                     </View>
 
                     {/* calories */}
@@ -173,7 +173,7 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
                             height: 40,
                             justifyContent: 'center',
                             flexDirection: 'row',
-                            borderRadius:20
+                            borderRadius: 20
                         }}
                     >
                         <View
@@ -222,8 +222,8 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
                                 marginTop: 1
                             }}
                             >
-                               {getOrderQty(restaurant.menuId)}
-                        </Text>
+                                {getOrderQty(restaurant.menuId)}
+                            </Text>
                         </View>
 
                         <TouchableOpacity
@@ -324,45 +324,46 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
         return (
             <View
                 style={{
-                    marginTop:20
-                   
-                   
+                    marginTop: 20
+
+
                 }}
             >
                 <View
                     style={{
-                        flexDirection:'row',
-                        justifyContent:'center',
-                        alignItems:'center'
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        alignItems: 'center'
                     }}
                 >
                     <TouchableOpacity
                         style={{
-                            width:"80%",
-                            height:50,
+                            width: "80%",
+                            height: 50,
                             padding: SIZES.padding,
                             backgroundColor: "#FBC401",
-                            justifyContent:'center',
+                            justifyContent: 'center',
                             alignItems: 'center',
                             borderRadius: 20
                         }}
+                        onPress={() => { navigation.navigate("CheckOutScreen")}}
                     >
                         <Text>Order Now</Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
                         style={{
-                            width:"20%",
-                            height:50,
+                            width: "20%",
+                            height: 50,
                             padding: SIZES.padding,
-                            backgroundColor:'#FBC401',
-                            justifyContent:'center',
+                            backgroundColor: '#FBC401',
+                            justifyContent: 'center',
                             alignItems: 'center',
-                            borderRadius:20,
-                            marginLeft:10,
+                            borderRadius: 20,
+                            marginLeft: 10,
                         }}
                     >
-                        <Image source={icons.bell} resizeMode="contain" style={{ width:20, height:20}} />
+                        <Image source={icons.bell} resizeMode="contain" style={{ width: 20, height: 20 }} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -370,15 +371,18 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
     }
 
 
-    if(restaurant){
+    if (restaurant) {
         return (
             <View style={styles.container}>
-                { isFocused && <StatusBar backgroundColor='#349665' barStyle="light-content" />}
-                <View style={{ flex: 1, backgroundColor: '#349665' }}>
+                { isFocused && <StatusBar backgroundColor='#FBC401' barStyle="light-content" />}
+                <ImageBackground
+                    source={images.bg1}
+                    imageStyle={{ borderBottomLeftRadius: 20, borderBottomRightRadius: 20 }}
+                    style={{ flex: 1, width: '100%' }}>
                     {renderHeader()}
-                </View>
+                </ImageBackground>
                 <View
-    
+
                     style={{ flex: 3, borderTopRightRadius: 50, borderTopLeftRadius: 50, backgroundColor: '#F5F2EE', padding: SIZES.padding * 3 }}>
                     {renderContent()}
                     {renderIngradient()}
@@ -387,9 +391,9 @@ const OrderDeliveryScreen = ({ navigation, route }) => {
             </View>
         )
     } else {
-        return(<></>)
+        return (<></>)
     }
-    
+
 }
 
 export default OrderDeliveryScreen
@@ -397,7 +401,7 @@ export default OrderDeliveryScreen
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#349665'
+        backgroundColor: '#FBC401'
     },
     shadow: {
         shadowColor: "#000",

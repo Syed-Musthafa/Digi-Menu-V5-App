@@ -18,9 +18,21 @@ import {
     HomeScreen,
     FoodsScreen,
     OrderDeliveryScreen,
-    ItemScreen
-    
+    ItemScreen,
+    CheckOutScreen
   } from "./../pages/TakeOutScreen"
+
+
+  import {
+    BookHomeScreen,
+    BookTableScreen,
+    DateScreen,
+    ConfirmedScreen,
+    InformationScreen,
+    MembersScreen,
+    TimeScreen
+   
+  } from "./../pages/TableBookingScreen"
 
 
 
@@ -52,6 +64,18 @@ import {
         <Stack.Screen name="FoodsScreen" component={FoodsScreen} />
         <Stack.Screen name="OrderDeliveryScreen" component={OrderDeliveryScreen} />
         <Stack.Screen name="ItemScreen" component={ItemScreen} />
+        <Stack.Screen name="CheckOutScreen" component={CheckOutScreen} />
+
+          {/* TableBookingScreen */}
+
+          <Stack.Screen name="BookHomeScreen" component={BookHomeScreen} />
+          <Stack.Screen name="BookTableScreen" component={BookTableScreen} />
+          <Stack.Screen name="DateScreen" component={DateScreen} />
+          <Stack.Screen name="ConfirmedScreen" component={ConfirmedScreen} />
+          <Stack.Screen name="InformationScreen" component={InformationScreen} />
+          <Stack.Screen name="MembersScreen" component={MembersScreen} />
+          <Stack.Screen name="TimeScreen" component={TimeScreen} />
+
         
       </Stack.Navigator>
       )

@@ -16,7 +16,7 @@ export default  [
         rating: '4.3 (45 reviews)',
         categories: [5, 7],
         priceRating: affordable,
-        photo: images.restaurent1,
+        photo: images.restaurent3,
         location: "N2, Nirmala building left annexe,  India"
          
     },
@@ -26,7 +26,7 @@ export default  [
         rating: '4.6 (75 reviews)',
         categories: [2, 4, 6],
         priceRating: expensive,
-        photo: images.restaurent2,
+        photo: images.restaurent4,
         
         location: "Heber Road, India"
        
@@ -38,7 +38,7 @@ export default  [
         rating: '4.8 (30 reviews)',
         categories: [3],
         priceRating: expensive,
-        photo: images.restaurent3,
+        photo: images.restaurent2,
         
         location: "99, Salai Rd, near rukmani theatre,  India"
        
@@ -49,7 +49,7 @@ export default  [
         rating: '4.9 (90 reviews)',
         categories: [8],
         priceRating: expensive,
-        photo: images.restaurent4,
+        photo: images.restaurent1,
         
         location: "51-A/16-A, Hidayath Nagar,  India"
         

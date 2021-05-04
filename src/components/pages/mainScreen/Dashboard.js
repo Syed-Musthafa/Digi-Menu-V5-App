@@ -12,7 +12,7 @@ const Dashboard = ({navigation}) => {
                 <Animated.View
                     style={[{ flexDirection: 'row', justifyContent: 'space-between', }]}>
                     <TouchableOpacity
-                        onPress={() => { navigation.openDrawer() }}
+                        // onPress={() => { navigation.openDrawer() }}
                     >
                         <Image
                             source={icons.sidebar}
@@ -61,7 +61,10 @@ const Dashboard = ({navigation}) => {
                     </View>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={[styles.card, { marginTop: 40 }]}>
+                <TouchableOpacity 
+                style={[styles.card, { marginTop: 40 }]}
+                 onPress={ () => { navigation.navigate('BookHomeScreen')}}
+                 >
                 <View style={{ flexDirection: 'row', }}>
                         <View style={{ justifyContent: 'flex-start', alignItems: 'flex-start', padding: 20, }}>
                             <Image source={images.tableBooking} resizeMode="contain" style={{ width: 100, height: 100 }} />

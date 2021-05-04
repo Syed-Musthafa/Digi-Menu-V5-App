@@ -1,7 +1,8 @@
 
 
 const bgImg = require("../assets/images/frontBG.jpg");
-
+const bg = require("../assets/images/bg.png");
+const bg1 = require("../assets/images/bg1.jpg");
 
 const homepage = require("../assets/images/homepage.jpg");
 
@@ -61,6 +62,8 @@ const ingra7 = require("../assets/images/ingra7.png");
 
 export default {
     bgImg,
+    bg,
+    bg1,
  
 
     homepage,

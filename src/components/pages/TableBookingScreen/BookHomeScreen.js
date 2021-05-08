@@ -187,7 +187,7 @@ const BookHomeScreen = ({ navigation, style }) => {
                 <View
                     style={{ padding: SIZES.padding, }}>
                     <TouchableOpacity
-                        onPress={() => { navigation.navigate("HotelDetails", { item }) }}
+                        // onPress={() => { navigation.navigate("HotelDetails", { item }) }}
                         style={{
                             backgroundColor: '#fff',
                             width: 140,

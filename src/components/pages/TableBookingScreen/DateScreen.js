@@ -50,13 +50,13 @@ const DateScreen = ({ navigation }) => {
                             alignItems: 'center',
                             padding: SIZES.padding,
                             borderRadius: 50,
-                            backgroundColor: "#f78da7E6",
+                         
                             width: 45
                         }}>
                         <Image
-                            source={icons.heart_red}
+                            source={icons.p11}
                             resizeMode="contain"
-                            style={{ width: 20, height: 20, tintColor: '#ffffff' }}
+                            style={{ width: 40, height: 40, }}
 
                         />
                     </TouchableOpacity>

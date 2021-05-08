@@ -4,15 +4,15 @@ import { StyleSheet, Text, View, TouchableOpacity, Image, Animated, ImageBackgro
 import { COLORS, FONTS, SIZES, icons, images, data, } from '../../exports'
 
 
-const Dashboard = ({navigation}) => {
+const Dashboard = ({navigation, style }) => {
 
     function renderHeader() {
         return (
             <View style={{ padding: SIZES.padding2, marginTop: 50 }}>
                 <Animated.View
-                    style={[{ flexDirection: 'row', justifyContent: 'space-between', }]}>
+                    style={[{ flexDirection: 'row', justifyContent: 'space-between', }, style]}>
                     <TouchableOpacity
-                        // onPress={() => { navigation.openDrawer() }}
+                        onPress={() => { navigation.openDrawer() }}
                     >
                         <Image
                             source={icons.sidebar}

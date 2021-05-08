@@ -65,6 +65,9 @@ export const star1 = require("../assets/icons/star.png");
 export const fire = require("../assets/icons/fire.png");
 export const clock = require("../assets/icons/clock.png");
 
+
+export const p11 = require("../assets/icons/p11.png");
+
 export default {
     
     home,
@@ -114,7 +117,9 @@ export default {
     star1,
     schedule,
     fire,
-    clock
+    clock,
+
+    p11,
 
     // cars1,
     // cars2,
